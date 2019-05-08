@@ -9,21 +9,21 @@ namespace SilentCommand
         {
             Process process = new Process();
 			
-			//[Optional]Sets  workind directory executable current directory
+	    //[Optional]Sets  workind directory executable current directory
             process.StartInfo.WorkingDirectory = Directory.GetCurrentDirectory();
 			
             process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
 
-			// Name|path of process|executable to start
+	    // Name|path of process|executable to start
             process.StartInfo.FileName = "python";
 			
-			//Arguments
+	    // Arguments
             process.StartInfo.Arguments = "app.py";
 
             process.Start();
 			
-			//[Optional]Open specific URL in  Browser
-			Process.Start("http://127.0.0.1:8080");
+	    // [Optional]Open specific URL in  Browser
+	    Process.Start("http://127.0.0.1:8080");
 
         }
     }
